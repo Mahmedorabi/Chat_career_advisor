@@ -24,6 +24,7 @@ user_query = st.chat_input("Type your message here...")
 user_query2 = user_query
 
 if upload_pdf is not None:
+    st.sidebar.success("PDF file uploaded successfully!")
     text = extract_pdf_text(upload_pdf)
     if user_query:
         user_query += text
