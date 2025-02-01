@@ -18,7 +18,7 @@ def read_system_prompt(directory):
         return file.read()
 
 def get_response(user_query, chat_history):
-    system_prompt = read_system_prompt("system_prompt.txt")
+    system_prompt = read_system_prompt("utils/system_prompt.txt")
 
     template = """
 
