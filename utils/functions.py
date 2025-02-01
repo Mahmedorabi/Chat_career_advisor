@@ -24,16 +24,12 @@ def get_response(user_query, chat_history):
 
     Chat history: {chat_history}
 
-    System prompt: {system_prompt}
-
     User question: {user_question}
 
     """
 
     # Ensure that the PDF text is included in the prompt
-    prompt = ChatPromptTemplate.from_template(template).partial(
-        system_prompt=system_prompt
-    )
+    prompt = ChatPromptTemplate.from_template(template)
 
     llm = ChatGoogleGenerativeAI(model="gemini-pro")
 
