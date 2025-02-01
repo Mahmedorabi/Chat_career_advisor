@@ -1,4 +1,4 @@
-langchain_core
+langchain-core
 langchain
 langchain_community
 PyPDF2
